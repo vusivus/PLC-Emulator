@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@css/mainwindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vts.jplceditor.ui.controller.MainWindowController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#createNewProject" text="New Project" />
+                  <MenuItem mnemonicParsing="false" onAction="#openProject" text="Open Project" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#saveProject" text="Save Project" />
+              <MenuItem mnemonicParsing="false" onAction="#onExit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#undoAction" text="Undo" />
+                  <MenuItem mnemonicParsing="false" onAction="#redoAction" text="Redo" />
+              <MenuItem mnemonicParsing="false" onAction="#deleteAction" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Compiler">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#verifyProgram" text="Verify" />
+                  <MenuItem mnemonicParsing="false" onAction="#compileProgram" text="Compile" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Program">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#saveProgram" text="Save Program" />
+                  <Menu mnemonicParsing="false" text="Create">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#createTag" text="Tag" />
+                      <MenuItem mnemonicParsing="false" onAction="#createRung" text="Rung" />
+                        <MenuItem mnemonicParsing="false" onAction="#createNewLadder" text="Program" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Communications">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#downloadProgram" text="Download" />
+                  <MenuItem mnemonicParsing="false" onAction="#commSettingsAction" text="Settings" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#documentationAction" text="Documentation" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar prefHeight="80.0">
+        <items>
+          <Button fx:id="newLadderButton" mnemonicParsing="false" onAction="#createNewProject">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/new_ladder-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="New Ladder Program" />
+               </tooltip>
+            </Button>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveProject">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/save-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Save Ladder Program" />
+               </tooltip>
+            </Button>
+            <Button fx:id="undoButton" mnemonicParsing="false" onAction="#undoAction">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/undo-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Undio" />
+               </tooltip>
+            </Button>
+            <Button fx:id="redoButton" mnemonicParsing="false" onAction="#redoAction">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/redo-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Redo" />
+               </tooltip>
+            </Button>
+            <Button fx:id="verifyButton" mnemonicParsing="false" onAction="#verifyProgram">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/ok-apply-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Verify Program" />
+               </tooltip>
+            </Button>
+            <Button fx:id="downloadButton" mnemonicParsing="false" onAction="#downloadProgram">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/download-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Download Program" />
+               </tooltip>
+            </Button>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsAction">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/settings-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Settings" />
+               </tooltip>
+            </Button>
+            <Button fx:id="redoButton1" mnemonicParsing="false" onAction="#helpAction">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/help-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Help" />
+               </tooltip>
+            </Button>
+        </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.33" minHeight="490.0" minWidth="800.0" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
+        <items>
+            <VBox minHeight="490.0" minWidth="200.0">
+               <children>
+                  <ScrollPane minHeight="200.0" minWidth="200.0">
+                     <content>
+                        <TreeView fx:id="programTree" minHeight="600.0" minWidth="200.0" onDragDetected="#onProgramDragDetected" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane minHeight="289.0" minWidth="200.0">
+                     <content>
+                        <TreeView fx:id="instructionTree" minHeight="600.0" minWidth="200.0" onDragDetected="#onInstructionDragDetected" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox minHeight="490.0" minWidth="200.0">
+               <children>
+                  <ScrollPane fx:id="ladderPane" minHeight="390.0" minWidth="200.0" />
+                  <TextArea fx:id="status" editable="false" minHeight="200.0" minWidth="200.0" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+               </children>
+            </VBox>
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </SplitPane>
+   </children>
+</VBox>

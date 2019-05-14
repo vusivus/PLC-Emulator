@@ -1,0 +1,9 @@
+main
+	UART1_Init
+	ADC_Init
+	SPI1_Init
+	ADC_Read
+		Delay_22us
+	SPI1_Write
+interrupt
+	UART1_Write

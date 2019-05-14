@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="240.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.vts.jplceditor.ui.controller.DownloadPopopController">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="64.0" prefWidth="200.0" progress="0.0" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="106.0" layoutY="100.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Downloading..">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

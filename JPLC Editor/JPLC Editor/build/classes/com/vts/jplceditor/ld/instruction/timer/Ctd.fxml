@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="90.0" prefWidth="120.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="3.0" layoutY="40.0" text="Counter">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label layoutX="3.0" layoutY="70.0" text="Count">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label layoutX="33.0" text="CTD" />
+      <Line endY="90.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="90.0" startX="120.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="90.0" startY="90.0" strokeWidth="3.0" />
+      <Line endX="30.0" endY="8.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="8.0" startX="62.0" startY="8.0" strokeWidth="3.0" />
+      <ComboBox fx:id="timerCB" layoutX="37.0" layoutY="33.0" prefWidth="80.0" />
+      <TextField fx:id="countTF" disable="true" layoutX="40.0" layoutY="62.0" prefWidth="75.0" />
+   </children>
+</fx:root>

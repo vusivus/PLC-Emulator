@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\EUSART bus test\Pic16.mcppi
+Project1=Uart_Test.mcppi
+[ActiveProject]
+Index=1

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vts.jplceditor.ui.controller.TagWindowController">
+   <children>
+      <Label layoutX="14.0" layoutY="93.0" text="Tag Name" />
+      <Label layoutX="17.0" layoutY="140.0" text="Tag Type" />
+      <Label layoutX="100.0" layoutY="26.0" text="Create Tag">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTF" layoutX="95.0" layoutY="89.0" />
+      <ComboBox fx:id="typeCB" layoutX="94.0" layoutY="136.0" prefWidth="150.0" />
+      <Button fx:id="acceptButton" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#acceptButtonAction" text="Accept">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/ok-apply-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="198.0" layoutY="200.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/cancel-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

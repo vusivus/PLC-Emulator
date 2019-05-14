@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="64.0" prefWidth="64.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="tagName" layoutY="2.0" text="Tag_Name" />
+      <Rectangle fx:id="dragOverIndicator" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="7.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="50.0" />
+      <Line fx:id="left_line" endX="28.0" endY="32.0" startY="32.0" strokeWidth="2.0" />
+      <Line fx:id="right_line" endX="36.0" endY="32.0" startX="64.0" startY="32.0" strokeWidth="2.0" />
+      <Line fx:id="left_bar" endX="28.0" endY="42.0" startX="28.0" startY="22.0" strokeWidth="2.0" />
+      <Line fx:id="right_bar" endX="36.0" endY="42.0" startX="36.0" startY="22.0" strokeWidth="2.0" />
+      <Line fx:id="center_bar" endX="30.0" endY="42.0" startX="34.0" startY="22.0" />
+   </children>
+</fx:root>

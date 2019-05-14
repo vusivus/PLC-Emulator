@@ -1,0 +1,26 @@
+main
+	__CC2DW
+	Lcd_Init
+		Delay_5500us
+		Delay_1us
+	Lcd_Cmd
+		Delay_1us
+		Delay_5500us
+		Delay_50us
+	UART1_Init
+	UART1_Write_Text
+		UART1_Write
+	UART1_Data_Ready
+	UART1_Read_Text
+		UART1_Data_Ready
+		UART1_Read
+	Lcd_Out
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Chr_CP
+			Lcd_Cmd
+				Delay_1us
+				Delay_5500us
+				Delay_50us

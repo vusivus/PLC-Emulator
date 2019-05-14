@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="64.0" prefWidth="64.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="tagName" layoutY="2.0" text="Tag_Name" />
+      <Rectangle fx:id="dragOverIndicator" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="7.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="50.0" />
+      <Line fx:id="left_line" endX="18.0" endY="32.0" startY="32.0" strokeWidth="2.0" />
+      <Line fx:id="right_line" endX="42.0" endY="32.0" startX="64.0" startY="32.0" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="30.0" layoutY="32.0" length="160.0" radiusX="12.0" radiusY="12.0" startAngle="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Arc fill="#1f93ff00" layoutX="31.0" layoutY="32.0" length="160.0" radiusX="12.0" radiusY="12.0" startAngle="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Text layoutX="27.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>

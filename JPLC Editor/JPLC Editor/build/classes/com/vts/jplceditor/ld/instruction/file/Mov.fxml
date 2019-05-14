@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="90.0" prefWidth="120.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="10.0" layoutY="35.0" text="Source">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label layoutX="31.0" text="MOV" />
+      <Line endY="90.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="90.0" startX="120.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="90.0" startY="90.0" strokeWidth="3.0" />
+      <Line endX="30.0" endY="8.0" startY="8.0" strokeWidth="3.0" />
+      <Line endX="120.0" endY="8.0" startX="62.0" startY="8.0" strokeWidth="3.0" />
+      <TextField fx:id="sourceTF" disable="false" layoutX="40.0" layoutY="28.0" prefWidth="75.0" />
+      <TextField fx:id="destTF" disable="false" layoutX="40.0" layoutY="60.0" prefWidth="75.0" />
+      <Label layoutX="10.0" layoutY="65.0" text="Dest.">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

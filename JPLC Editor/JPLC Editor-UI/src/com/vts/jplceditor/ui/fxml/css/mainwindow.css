@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    .tree-cell.label{
+        -fx-font-size: 5px;
+        -fx-font-family: Tahoma;
+        -fx-stroke: #eeeeee;
+        -fx-background-color: #0a0a0a;
+        -fx-text-fill: #ffffff;
+    }
+}

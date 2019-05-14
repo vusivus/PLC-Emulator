@@ -1,0 +1,21 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -RA -DL -O11111114 -fo20 -N"E:\Users\Vusman\Documents\TEE 5000 Projects\Project\Test\uart test\Pic16\Uart_Test_16.mcppi" -SP"E:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"E:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"E:\Users\Vusman\Documents\TEE 5000 Projects\Project\Test\uart test\Pic16\" -SP"E:\Users\Vusman\Documents\TEE 5000 Projects\Project\Test\uart test\" "Uart_Test.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_88X.mcl" "__Lib_EEPROM.mcl" "__Lib_FLASH_RW.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_SPI_c345.mcl" "__Lib_UART_c67.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_EthEnc28j60.mcl" "__Lib_EthEnc24j600.mcl" "__Lib_TouchPanel.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	P16F887.c
+diagnostics: 973	123	Compiled Successfully	P16F887.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	__Lib_MemManager.c
+warning: 34	1508	Implicit conversion of int to ptr	__Lib_MemManager.c
+diagnostics: 231	123	Compiled Successfully	__Lib_MemManager.c
+diagnostics: 0	122	Compilation Started	__Lib_GlcdFonts.c
+diagnostics: 1207	123	Compiled Successfully	__Lib_GlcdFonts.c
+diagnostics: 0	122	Compilation Started	Uart_Test.c
+warning: 58	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	Uart_Test.c
+diagnostics: 69	123	Compiled Successfully	Uart_Test.c
+diagnostics: 0	127	All files Compiled in 47 ms	 
+hint: 0	1144	Used RAM (bytes): 28 (8%)  Free RAM (bytes): 324 (92%)	Used RAM (bytes): 28 (8%)  Free RAM (bytes): 324 (92%)
+hint: 0	1144	Used ROM (program words): 396 (5%)  Free ROM (program words): 7796 (95%)	Used ROM (program words): 396 (5%)  Free ROM (program words): 7796 (95%)
+diagnostics: 0	125	Project Linked Successfully	Uart_Test_16.mcppi
+diagnostics: 0	128	Linked in 141 ms	 
+diagnostics: 0	129	Project 'Uart_Test_16.mcppi' completed: 469 ms	 
+diagnostics: 0	103	Finished successfully: 26 Feb 2017, 19:12:55	Uart_Test_16.mcppi
