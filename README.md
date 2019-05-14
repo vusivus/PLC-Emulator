@@ -21,12 +21,12 @@ The emulator will first be assembled and simulated on Proteus then built on a br
 Hence this project comprised of a Software and a Hardware Designs.
 
 
-#LICENCE                                  
+# LICENCE                                  
 
 
 This project still remains the property of the National University of Science and Technology and is distributed for demonstration purposes only. 
 
-#PROJECT OVERVIEW                           
+# PROJECT OVERVIEW                           
 
 The PLC Emulator was designed using the PIC18F2550 Microcontroller which has the following Key Features:
 
