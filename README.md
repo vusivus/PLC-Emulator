@@ -30,13 +30,13 @@ This project still remains the property of the National University of Science an
 
 The PLC Emulator was designed using the PIC18F2550 Microcontroller which has the following Key Features:
 
-USB V2.0 Compliant
-Two External Clock modes, up to 48 MHz
-32 KBytes Flash memory
-2 KBytes RAM
+1. USB V2.0 Compliant
+2. Two External Clock modes, up to 48 MHz
+3. 32KBytes Flash memory
+4. 2 KBytes RAM
 
-This project partially fulfilled the following aspects of the IEC 61131 Standard PLC specification [20] as the project will only have less than a year to reach conclusion:
-The power supply function. 
-The communication function. 
-The Programming, debugging, testing and documentation function. 
-A limited Interface function to sensors and actuators
+This project partially fulfilled the following aspects of the IEC 61131 Standard PLC specification as the project will only have less than a year to reach conclusion:
+1. The power supply function. 
+2. The communication function. 
+3. The Programming, debugging, testing and documentation function. 
+4. A limited Interface function to sensors and actuators
